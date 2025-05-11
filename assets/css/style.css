@@ -1,0 +1,519 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/*Global css*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+h1 h2 h3 h4 h5{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.no-padding{
+	padding: 0px;
+}
+
+
+/*Header section*/
+.header-section .navbar .nav-link{
+    position: relative;
+}
+.header-section .navbar .nav-link::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    text-align: center;
+    left: 11px;
+    bottom: -10px;
+    transition: 1s;
+    background-color: #28377E;
+    margin-bottom: 2px;
+}
+.header-section .navbar .nav-link:hover::after{
+    opacity: 1;
+}
+.logo{
+	padding: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: uppercase;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #28377e;
+    letter-spacing: -0.5px;
+    transition: 0.2s all ease-in-out;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	color: #f2622c;
+}
+
+
+/*Banner section */
+.banner-section{
+	position: relative;
+    background: url(../img/shawon.png) no-repeat center top;
+    background-size: cover;
+    padding: 225px 0px 351px;
+}
+
+.banner-content{
+    position: relative;
+    z-index: 999;
+}
+.banner-content h1{
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: 79px;
+    font-weight: 700;
+    line-height: 90px;
+    /* margin-bottom: 100px; */
+    margin: -50px 319px;
+}
+.banner-content h1 span{
+	display: block;
+}
+.banner-content a{
+
+}
+.banner-content i{
+    position: absolute;
+    color: #fff;
+    font-size: 21px;
+    margin: 241px 0px 0px 633px; 
+}
+
+
+/*Who we are*/
+.about-us{
+	padding: 100px 0;
+}
+.about-us h2{
+	position: relative;
+    font-size: 36px;
+    color: #28377e;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.about-us h2::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 3px;
+	left: 0px;
+	top: -20px;
+	background: #f2622c;
+}
+.about-us p{
+	margin-bottom: 30px;
+	color: #a7a7aa;
+	font-weight: 500;
+}
+.about-us img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*Service section*/
+.service-section{
+	position: relative;
+    padding: 67px 0;
+    background: #f7f8f8;
+}
+.service-section::before{
+	content: "";
+    position: absolute;
+    width: 53%;
+    height: 74%;
+    top: 0;
+    right: 0;
+    margin-top: 222px;
+    background: url(../img/service.png) no-repeat center bottom;
+    background-size: cover;
+}
+.service-section h2{
+	position: relative;
+    font-size: 36px;
+    color: #28377e;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.service-section .dash{
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+	margin: 0 auto;
+}
+.service-content{
+	padding: 50px 0;
+    margin-top: 30px;
+}
+.service-item{
+	position: relative;
+	width: 85%;
+}
+.service-item .item-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.service-item .item-content h3{
+	text-align: center;
+	font-size: 26px;
+	line-height: 38px;
+	color: #fff;
+	font-weight: 700;
+	margin-top: 60%;
+}
+.service-item img{
+	width: 100%;
+	height: auto;
+}
+.sone{
+	float: right;
+}
+.stwo{
+	margin: 0 auto;
+}
+.service-item .item-content a{
+	display: block;
+}
+.service-item .item-content a .fa-arrow-right-long{
+	display: block;
+	text-align: center;
+	color: #fff;
+    margin: 32%;
+}
+
+
+/*Content section start*/
+.content-section{
+	background: url(../img/content.png) no-repeat center top;
+	background-size: cover;
+	padding: 180px 0 75px;
+}
+.content-section h2{
+	position: relative;
+	font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 180px;
+}
+.content-section h2 span{
+	display: block;
+}
+.content-section p{
+	color: #6e75ac;
+	margin-top: 20px;
+	font-size: 15px;
+}
+.content-section h5{
+	margin-top: 30px;
+	color: #f2622c;
+}
+.content-section h2::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 3px;
+	left: 0px;
+	top: -20px;
+	background: #f2622c;
+}
+.content-section .img-item{
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.content-section .img-item img{
+	width: 100%;
+}
+.content-section .img-item .text-item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.content-section .img-item .text-item h3 span{
+	display: block;
+}
+.content-section .img-item .text-item h3{
+	margin: 440px 0px 0px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/*Language section*/
+.language-section{
+	padding: 150px 0px;
+}
+.language-section h2{
+    font-size: 36px;
+    color: #28377e;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+.language-section .dash{
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+	margin: 0 auto;
+}
+.language-section .language h3{
+	color: #28377e;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.language-section .language p{
+	margin-bottom: 30px;
+	color: #a7a7aa;
+	font-weight: 500;
+	font-size: 16px;
+}
+.language-section .language a{
+	text-transform: uppercase;
+    color: #28377e;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+}
+.language-section .language a:hover{
+	color: #f2622c;
+    font-weight: 800;
+}
+
+
+/*Contract us section*/
+.contract-us{
+    padding: 150px 0 70px;
+    background-color: #28377e;
+}
+.contract-us h2{
+	text-transform: uppercase;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.contract-us .dash{
+    width: 60px;
+    height: 4px;
+    background: #f2622c;
+    margin: -74px auto 20px;
+}
+.contract-form .form-control{
+	background: transparent;
+	background: transparent;
+    border: none;
+    border-bottom: 1px solid #4759a7;
+    border-radius: unset;
+    margin-top: 20px;
+}
+.contract-form .form-control::placeholder{
+    color: #ffffff;
+}
+.contract-form .btn-send{
+	margin: 60px auto 0;
+    display: block;
+    padding: 8px 70px;
+    background: #f2622c;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+
+/*Footer part*/
+.footer-section{
+	padding: 30px 0px;
+	background-color: #0c1234;
+}
+.footer-section p{
+	color: #616ca8;
+    margin: 6px 0 0 100px;
+}
+.footer-section ul li{
+	list-style: none;
+}
+.footer-section ul li i{
+    display: inline;
+    float: right;
+    padding: 0 10px;
+    color: #b1b7dd;
+    font-size: 22px;
+    margin-top: 12px;
+}
+.footer-section ul li i:hover{
+    color: #F2622C;
+}
+
+
+/*Mobile devie*/
+
+@media (min-width: 320px) and (max-width: 579px){
+
+   .logo {
+    padding: 5px;
+   }
+   .navbar-expand-lg .navbar-nav .nav-link {
+    /* margin-top: 20px; */
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #28377e;
+    letter-spacing: -0.5px;
+    transition: 0.2s all ease-in-out;
+  }
+   .banner-section h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    margin: -253px 46px;
+    font-weight: 700;
+    line-height: 41px;
+   }
+   .banner-content i{
+    position: absolute;
+    color: #fff;
+    font-size: 21px;
+    margin: -76px 0px 0px 172px;
+   }
+   .banner-section {
+    background: url(../img/shawon.png) cover ;
+    padding: 358px 0px 0px;
+  }
+  .about-us h2 {
+    position: relative;
+    font-size: 28px;
+    color: #28377e;
+    font-weight: 700;
+    margin-bottom: 20px;
+ }
+ .about-us p {
+    margin-bottom: 15px;
+    color: #a7a7aa;
+    font-weight: 300;
+    padding-right: 11px;
+ }
+ .about-us img {
+    width: 100%;
+    margin-top: 35px;
+}
+ .service-section {
+    position: relative;
+    padding: 10px 0;
+    background: #f7f8f8;
+}
+.service-section .dash {
+    width: 60px;
+    height: 4px;
+    background: #f2622c;
+    margin: 8px auto;
+}
+.service-content {
+    margin-top: 41px;
+}
+.sone {
+    float: none;
+}
+.service-item {
+    position: relative;
+    width: unset;
+    margin-bottom: 18px;
+}
+.content-section {
+    background: url(../img/content.png) no-repeat center top;
+    background-size: cover;
+    padding: 0px
+}
+.content-section h2 {
+    position: relative;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 80px;
+}
+.content-section p {
+    color: #6e75ac;
+    margin: 35px 0px 12px;
+    font-size: 15px;
+}
+.content-section h5 {
+    margin-top: 30px 0px;
+    color: #f2622c;
+    margin: 0px 0px 50px;
+    font-size: 16px;
+}
+.language-section {
+    padding: 80px 0px;
+}
+.language-section h2 {
+    font-size: 28px;
+    color: #28377e;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 20px;
+}
+.language-section .language h3 {
+    color: #28377e;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.language-section .language p {
+    margin-bottom: 30px;
+    color: #a7a7aa;
+    font-weight: 500;
+    font-size: 15px;
+}
+.language-section .language h3 {
+    color: #28377e;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 83px;
+}
+.content-section .img-item .text-item h3 {
+    margin: 346px 0px 0px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-section p {
+    color: #616ca8;
+    margin: 0px;
+    text-align: center;
+}
+.footer-section ul{
+	margin-right: 50px;
+}
+.footer-section ul {
+    margin-right: 68px;
+}
+
+}
